@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MVVMishApp</string>
+
+    <string name="warning_general_title">Oops..</string>
+    <string name="warning_general_message">Something went wrong</string>
+    <string name="click_label">Click</string>
+    <string name="login_frag_label">Login fragment</string>
+</resources>

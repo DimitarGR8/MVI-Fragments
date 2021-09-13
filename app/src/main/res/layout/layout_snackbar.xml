@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/vBackground"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/shape_snackbar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="18dp"
+        app:layout_constraintBottom_toBottomOf="@id/vBackground"
+        app:layout_constraintEnd_toEndOf="@id/vBackground"
+        app:layout_constraintTop_toTopOf="@id/vBackground" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivIconBackground"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="18dp"
+        app:layout_constraintBottom_toBottomOf="@id/vBackground"
+        app:layout_constraintStart_toStartOf="@id/vBackground"
+        app:layout_constraintTop_toTopOf="@id/vBackground" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivIcon"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        app:layout_constraintBottom_toBottomOf="@id/ivIconBackground"
+        app:layout_constraintEnd_toEndOf="@id/ivIconBackground"
+        app:layout_constraintStart_toStartOf="@id/ivIconBackground"
+        app:layout_constraintTop_toTopOf="@id/ivIconBackground" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="10dp"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@id/tvMessage"
+        app:layout_constraintEnd_toStartOf="@id/ivClose"
+        app:layout_constraintStart_toEndOf="@id/ivIconBackground"
+        app:layout_constraintTop_toTopOf="@id/vBackground"
+        tools:text="smth" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvMessage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginBottom="10dp"
+        android:includeFontPadding="false"
+        android:maxLines="3"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@id/vBackground"
+        app:layout_constraintEnd_toStartOf="@id/ivClose"
+        app:layout_constraintStart_toEndOf="@id/ivIconBackground"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        tools:text="smth\nsmth\nsmth" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
