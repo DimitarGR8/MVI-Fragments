@@ -147,7 +147,6 @@ class MainActivity : BaseActivity() {
         initializeKeyboardManager()
     }
 
-
     private fun registerConnectivityListener() {
         SystemServices.getNetworkService(this).checkNetworkConnection { isConnected ->
             offlineWarningDialog?.dismiss()

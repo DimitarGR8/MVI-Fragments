@@ -41,5 +41,4 @@ class UserProfileRepository(
             mainImage = mainImage
         )
     }
-
 }

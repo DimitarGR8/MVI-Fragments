@@ -12,7 +12,6 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.FlowPreview
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
-import org.json.JSONObject
 import javax.inject.Inject
 
 @FlowPreview
@@ -39,9 +38,7 @@ class MainViewModel @Inject constructor(
         }
     }
 
-    override fun initializeSessionStatus(
-        action: String?
-    ) {
+    override fun initializeSessionStatus(action: String?) {
         viewModelScope.launch(Dispatchers.IO) {
             //Check for authenticationToken
             val isAuthenticated = false
